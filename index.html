@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Rotating Cube Animation</title>
+    <link rel="icon" type="image/png" href="https://cdn.pixabay.com/photo/2018/04/11/19/48/cube-3311596_960_720.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-800 flex flex-col items-center justify-center h-screen">
+    <div class="scene">
+        <div class="cube">
+            <div class="face front">Trước</div>
+            <div class="face back">Sau</div>
+            <div class="face right">Phải</div>
+            <div class="face left">Trái</div>
+            <div class="face top">Trên</div>
+            <div class="face bottom">Dưới</div>
+        </div>
+    </div>
+    <div class="controls mt-28 flex flex-row justify-center">
+        <button id="toggleRotation" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition mx-2 w-24">Tạm dừng</button>
+        <button id="speedUp" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition mx-2 w-24">Tăng tốc</button>
+        <button id="slowDown" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition mx-2 w-24">Giảm tốc</button>
+        <button id="reset" class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600 transition mx-2 w-24">Đặt lại</button>
+    </div>
+    <p id="status" class="text-white mt-4 text-lg">Trạng thái: Đang xoay</p>
+    <p id="speedDisplay" class="text-white mt-2 text-lg">Tốc độ: 5s</p>
+    <script src="script.js"></script>
+</body>
+</html>
